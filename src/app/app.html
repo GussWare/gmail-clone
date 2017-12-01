@@ -1,0 +1,25 @@
+<ion-menu [content]="nav">
+    <ion-header >
+        <ion-toolbar color="danger">
+            <ion-title>Menú</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list >
+            <button ion-item (click)="openPage(inboxPage)">
+                <ion-icon name="mail" item-left></ion-icon>    
+                Inbox
+
+                <ion-badge item-right color="dark">{{ totalCorreos }}</ion-badge>
+            </button>
+
+            <button ion-item (click)="openPage(enviadosPage)">
+                <ion-icon name="send" item-left></ion-icon>  
+                Enviados
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav #nav [root]="rootPage"></ion-nav>

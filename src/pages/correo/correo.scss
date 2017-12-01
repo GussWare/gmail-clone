@@ -1,0 +1,21 @@
+page-correo {
+    p.mensaje {
+        margin-bottom: 50px;
+    }
+
+    .tools-button {
+        background-color: #fff;
+        position: fixed;
+        bottom:0px;
+
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-top-color: #eee;
+
+        color: #eee; 
+
+        button {
+            color: #333;
+        }
+    }
+}
